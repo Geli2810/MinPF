@@ -1,0 +1,64 @@
+﻿@page
+@model ClothingShop_TrainingTime.Pages.Ansatte_Side.Ansatte_CRUDS.Produckter_CRUD.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Produkter</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produkter.Navn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produkter.Navn)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produkter.Beskrivelse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produkter.Beskrivelse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produkter.Pris)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produkter.Pris)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produkter.Størrelse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produkter.Størrelse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produkter.Farve)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produkter.Farve)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produkter.LagerAntal)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produkter.LagerAntal)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produkter.Kategori)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produkter.Kategori.KategoriId)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Produkter.ProduktId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

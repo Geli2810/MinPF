@@ -1,0 +1,69 @@
+﻿@page
+@model ClothingShop_TrainingTime.Pages.UserSider.ProduktSide.VidersendeProduktModel
+@{
+    ViewData["Title"] = "Vidersende Produkt";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Layout</title>
+</head>
+<body>
+    <div class="cart-container">
+        <div class="cart-header">Din indkøbskurv (@Model.Produkter.Count)</div>
+
+        <form method="post">
+            @foreach (var item in Model.Produkter)
+            {
+                <div class="cart-item">
+                    <img src="@item.BilledeUrl" alt="Sneaker">
+                    <div class="item-details">
+                        <h3>@item.Navn</h3>
+                        <span class="original-price">@item.Pris kr</span>
+                        <input type="hidden" name="ProduktId" value="@item.ProduktId" />
+                        <div class="form-group">
+                            <label asp-for="@item.Farve" class="control-label"></label>
+                            <select name="Farve" class="form-control" asp-items="ViewBag.Farve"></select>
+                        </div>
+                        <input type="hidden" name="ProduktId" value="@item.ProduktId" />
+                        <div class="form-group">
+                            <label asp-for="@item.Størrelse" class="control-label"></label>
+                            <select name="Størrelse" class="form-control" asp-items="ViewBag.Størrelse"></select>
+                        </div>
+
+                        <button asp-page-handler="AddingToTheCard" type="submit" class="btn btn-primary">Tilføj til kurv</button>
+
+                    </div>
+                </div>
+            }
+        </form>
+
+        @* <!-- Cart Summary --> *@
+        @* <div class="cart-summary"> *@
+        @*     <div class="summary-row"> *@
+        @*         <span>Subtotal</span> *@
+        @*         <span>@Model kr</span> *@
+        @*     </div> *@
+        @*     <div class="summary-row"> *@
+        @*         <span>Levering</span> *@
+        @*         <span>@Model kr</span> *@
+        @*     </div> *@
+        @*     <div class="summary-row total"> *@
+        @*         <span>Pris i alt inkl. moms</span> *@
+        @*         <span>@Model kr</span> *@
+        @*     </div> *@
+        @*     <button class="checkout-btn">Videre til kassen</button> *@
+        @*     <div class="payment-methods"> *@
+        @*         <img src="https://via.placeholder.com/40x25" alt="Mastercard"> *@
+        @*         <img src="https://via.placeholder.com/40x25" alt="Visa"> *@
+        @*         <img src="https://via.placeholder.com/40x25" alt="Amex"> *@
+        @*         <img src="https://via.placeholder.com/40x25" alt="MobilePay"> *@
+        @*         <img src="https://via.placeholder.com/40x25" alt="PayPal"> *@
+        @*         <img src="https://via.placeholder.com/40x25" alt="Klarna"> *@
+        @*     </div> *@
+        @* </div> *@
+    </div>
+</body>
+</html>

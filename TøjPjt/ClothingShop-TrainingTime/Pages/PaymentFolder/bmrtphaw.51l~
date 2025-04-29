@@ -1,0 +1,49 @@
+﻿@page
+@model ClothingShop_TrainingTime.Pages.PaymentFolder.CardModel
+@{
+}
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Din indkøbskurv</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    @foreach (var item in Model.Produkter)
+    {
+        <header>
+            <h1>Din indkøbskurv (@Model.Produkter.Count)</h1>
+        </header>
+
+        <main class="cart-container">
+            <section class="item-details">
+            <img  style="width: 100px;" src="@item.BilledeUrl" alt="Tommy Hilfiger COURT CUP" />
+            <div>
+                <h2>@item.Navn</h2>
+                <p>@item.LagerAntal - @item.Kategori- @item.Farve</p>
+                <p class="price">@item.Pris kr</p>
+                <p>Farve: @item.Farve</p>
+                <p>Størrelse: @item.Størrelse</p>
+            </div>
+        </section>
+
+        <section class="summary">
+            <p>Subtotal: <strong>@item.Pris kr</strong></p>
+            <p>Levering: <strong>0,00 kr</strong></p>
+            <p class="total">Pris i alt: <strong>@item.Pris kr</strong></p>
+            <button>Videre til kassen</button>
+            <div class="payments">
+                <p>Vi accepterer:</p>
+                <img src="mastercard.png" alt="Mastercard" />
+                <img src="visa.png" alt="Visa" />
+                <img src="paypal.png" alt="PayPal" />
+                <img src="klarna.png" alt="Klarna" />
+                <!-- osv. -->
+            </div>
+        </section>
+    </main>
+    }
+</body>
+</html>

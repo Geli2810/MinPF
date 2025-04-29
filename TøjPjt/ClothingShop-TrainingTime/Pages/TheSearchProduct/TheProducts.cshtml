@@ -1,0 +1,28 @@
+﻿@page
+@model ClothingShop_TrainingTime.Pages.TheSearchProduct.TheProductsModel
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<form method="post">
+    <div class="main-content">
+        <div class="container-fluid px-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-start">
+                @foreach (var produkt in Model.Produkter)
+                {
+                    <div class="col" style="min-width: 280px;">
+                        <div class="card h-100 d-flex flex-column" style="background: #DEB887; border: none; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                            <img src="@produkt.BilledeUrl" class="card-img-top" alt="@produkt.Navn" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title" style="color: #004080;">@produkt.Navn</h5>
+                                <p class="card-text">Price: @produkt.Pris</p>
+                                <p class="card-text">Description: @produkt.Beskrivelse</p>
+                                <button name="ProduktId" value="@produkt.ProduktId" class="btn btn-primary mt-auto" asp-page-handler="TheGivenProduct" style="background-color: #0066cc; border: none; border-radius: 25px;">Show Product</button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</form>

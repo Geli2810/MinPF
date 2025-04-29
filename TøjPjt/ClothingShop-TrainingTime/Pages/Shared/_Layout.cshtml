@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ClothingShop_TrainingTime</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ClothingShop_TrainingTime.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/sidebar.css" />
+</head>
+<body>
+    <div class="page-wrapper d-flex flex-column min-vh-100">
+        @if (LogIn.LoginSideModel.kunder != null)
+        {
+            <header style="color: #0077cc">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid px-4">
+                        <a class="navbar-brand" asp-area="" asp-page="/Index">ClothingShop_TrainingTime</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                            <ul class="navbar-nav flex-grow-1">
+                                @if (Context.Session.GetString("User") == null)
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-page="/LogIn/LoginSide">Login</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item">
+                                        <span class="nav-link text-dark">Hej @Context.Session.GetString("User")</span>
+                                    </li>
+                                }
+                                @if (Context.Session.GetString("User") != null || Context.Session.GetString("Ansatte") != null)
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-page="/LogIn/LogUdSidet">Log Ud</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-page="/PaymentFolder/Card">Payment</a>
+                                    </li>
+
+                                }
+                                @if (Context.Session.GetString("Ansatte") == null)
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-page="/Ansatte-Side/LogIn/AnsatteLog">Ansatte Side</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item">
+                                        <span class="nav-link text-dark">Goddag @Context.Session.GetString("Ansatte")</span>
+                                    </li>
+                                }
+                            </ul>
+
+                            <form method="post" class="d-flex ms-3">
+                                <input class="form-control me-2" type="search" placeholder="Search" name="Navn" aria-label="Search">
+                                <button class="btn btn-outline-success" asp-page="/TheSearchProduct/TheProducts" asp-page-handler="TheSpecificProduct" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        }
+
+        <div class="sidebar">
+            <form method="post">
+                <h5>Categories</h5>
+                <ul class="nav flex-column">
+                    <button type="submit" class="nav-link" asp-page="/TheSearchProduct/TheProducts" asp-page-handler="Filter" asp-route-kategori="Sko">Sneakers</button>
+                    <button type="submit" class="nav-link" asp-page="/TheSearchProduct/TheProducts" asp-page-handler="Filter" asp-route-kategori="Jakker">Jakker</button>
+                    <button type="submit" class="nav-link" asp-page="/TheSearchProduct/TheProducts" asp-page-handler="Filter" asp-route-kategori="Bukser">Bukser</button>
+                    <button type="submit" class="nav-link" asp-page="/TheSearchProduct/TheProducts" asp-page-handler="Filter" asp-route-kategori="T-shirts">T-shirts</button>
+                    <button type="submit" class="nav-link" asp-page="/TheSearchProduct/TheProducts" asp-page-handler="Filter" asp-route-kategori="Kjoler">Shirts</button>
+                </ul>
+            </form>
+        </div>
+
+        <div class="container-fluid p-4 flex-grow-1">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted mt-auto">
+            <div class="container">
+                &copy; 2025 - ClothingShop_TrainingTime - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

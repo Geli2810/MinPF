@@ -1,0 +1,51 @@
+﻿@page
+@model ClothingShop_TrainingTime.Pages.PaymentFolder.CardModel
+@{
+}
+
+<form method="post">
+    <div class="cart-and-summary">
+        <div class="cart-items">
+            @foreach (var item in Model.Produkter)
+            {
+                <main class="cart-container">
+                    <section class="item-details">
+                        <img style="width: 150px; height: 150px;" src="@item.BilledeUrl" alt="@item.Navn" />
+                        <div>
+                            <h2>@item.Navn</h2>
+                            <p>@item.LagerAntal - @item.Kategori - @item.Farve</p>
+                            <p class="price">@item.Pris kr</p>
+                            <p>Farve: @item.Farve</p>
+                            <p>Størrelse: @item.Størrelse</p>
+                            <button asp-page-handler="Remove" class="btn-danger" style="border-radius: 50%;" asp-route-produktId="@item.ProduktId">Fjern Varen</button>
+                        </div>
+                    </section>
+                </main>
+            }
+        </div>
+
+        <section class="summary">
+            <p>Subtotal: <strong>@((int?)Model.Produkter.Sum(p => p.Pris)) kr</strong></p>
+            @if (Model.Produkter.Count > 2)
+            {
+                <p>5% rabat: <strong>@Model.Produkter.Sum(p => p.Pris * Model.TheRabat) kr</strong></p>
+            }
+            else
+            {
+                <p>Levering: <strong>0,00 kr</strong></p>
+            }
+            @if (Model.Produkter.Count > 2)
+            {
+                <p class="total">Pris i alt: <strong>@(((int?)Model.Produkter.Sum(p => p.Pris)) * (1 - Model.TheRabat)) kr</strong></p>
+            }
+            <button asp-page-handler="Adress" asp-all-route-datas="@Model.Produkter" class="btn-primary">Videre til kassen</button>
+            <div class="payments">
+                <p>Vi accepterer:</p>
+                <img src="mastercard.png" alt="Mastercard" />
+                <img src="visa.png" alt="Visa" />
+                <img src="paypal.png" alt="PayPal" />
+                <img src="klarna.png" alt="Klarna" />
+            </div>
+        </section>
+    </div>
+</form>

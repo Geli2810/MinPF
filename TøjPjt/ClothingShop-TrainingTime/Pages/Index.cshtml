@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@if (HttpContext.Session.GetString("Ansatte") != null)
+{
+    <li class=" dropdown">
+        <a class="nav-link dropdown-toggle text-dark btn-outline-success" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 50px; ">
+            Overview/Edit departments
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+            <li>
+                <a class="dropdown-item" asp-area="" asp-page="/Ansatte-Side/Ansatte-CRUDS/Produckter-CRUD/Index">Product Overview</a>
+            </li>
+            <li>
+                <a class="dropdown-item" asp-area="" asp-page="/Ansatte-Side/Ansatte-CRUDS/Kunder-CRUD/Index">Overview of Customers</a>
+            </li>
+        </ul>
+    </li>
+}
+
+<a class="btn btn-outline-success" asp-page="/PaymentFolder/BetalingsFormer/Betaling">Add Product</a>
+
+<h2 class="mb-4 fw-bold">Current Ads</h2>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    @foreach (var annonce in Model.Produckters)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="@annonce.BilledeUrl" class="card-img-top" alt="Annonce billede" style="height: 200px; object-fit: cover;" />
+                <div class="card-body">
+                    <h5 class="card-title">@annonce.Titel</h5>
+                    <p class="card-text">@annonce.Beskrivelse</p>                               
+                    <p class="text-success fw-bold">Kun @annonce.KampagnePris kr!</p>                
+                    <p class="text-primary fw-bold">@annonce.RabatProcent % rabat</p>
+                    <p class="text-muted small">Gælder fra @annonce.StartDato til @annonce.SlutDato</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<h2 class="mb-4 fw-bold">Upcomming Ads In Next Month</h2>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    @foreach (var annonce in Model.TheUpcomingMonth)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="@annonce.BilledeUrl" class="card-img-top" alt="Annonce billede" style="height: 200px; object-fit: cover;" />
+                <div class="card-body">
+                    <h5 class="card-title">@annonce.Titel</h5>
+                    <p class="card-text">@annonce.Beskrivelse</p>
+                    <p class="text-success fw-bold">Kun @annonce.KampagnePris kr!</p>
+                    <p class="text-primary fw-bold">@annonce.RabatProcent % rabat</p>
+                    <p class="text-muted small">Gælder fra @annonce.StartDato til @annonce.SlutDato</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+

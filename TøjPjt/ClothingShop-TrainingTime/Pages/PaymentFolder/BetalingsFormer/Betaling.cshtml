@@ -1,0 +1,12 @@
+﻿@page
+@model ClothingShop_TrainingTime.Pages.PaymentFolder.BetalingsFormer.BetalingController
+@{
+}
+@{
+    ViewData["Title"] = "Betalingsside";
+}
+
+<h2>Tryk for at udføre betaling</h2>
+<form asp-controller="Betaling" asp-action="CreateCheckoutSession" method="post">
+    <button type="submit">Betal</button>
+</form>

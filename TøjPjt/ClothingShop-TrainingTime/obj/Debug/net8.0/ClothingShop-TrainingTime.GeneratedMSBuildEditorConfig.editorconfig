@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ClothingShop_TrainingTime
+build_property.RootNamespace = ClothingShop_TrainingTime
+build_property.ProjectDir = C:\Users\gelio\source\repos\ClothingShop-TrainingTime\ClothingShop-TrainingTime\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\gelio\source\repos\ClothingShop-TrainingTime\ClothingShop-TrainingTime
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Kunder-CRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcS3VuZGVyLUNSVURcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Kunder-CRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcS3VuZGVyLUNSVURcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Kunder-CRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcS3VuZGVyLUNSVURcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Kunder-CRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcS3VuZGVyLUNSVURcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Kunder-CRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcS3VuZGVyLUNSVURcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Produckter-CRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcUHJvZHVja3Rlci1DUlVEXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Produckter-CRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcUHJvZHVja3Rlci1DUlVEXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Produckter-CRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcUHJvZHVja3Rlci1DUlVEXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Produckter-CRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcUHJvZHVja3Rlci1DUlVEXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/Ansatte-CRUDS/Produckter-CRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXEFuc2F0dGUtQ1JVRFNcUHJvZHVja3Rlci1DUlVEXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Ansatte-Side/LogIn/AnsatteLog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5zYXR0ZS1TaWRlXExvZ0luXEFuc2F0dGVMb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/LogIn/LoginSide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nSW5cTG9naW5TaWRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/LogIn/LogUdSidet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nSW5cTG9nVWRTaWRldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/PaymentFolder/BetalingsFormer/Betaling.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudEZvbGRlclxCZXRhbGluZ3NGb3JtZXJcQmV0YWxpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/PaymentFolder/Card.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudEZvbGRlclxDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/TheSearchProduct/TheProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGhlU2VhcmNoUHJvZHVjdFxUaGVQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/UserSider/Adress/AdresseGodekendelse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclNpZGVyXEFkcmVzc1xBZHJlc3NlR29kZWtlbmRlbHNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/UserSider/Adress/UserAdress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclNpZGVyXEFkcmVzc1xVc2VyQWRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/UserSider/ProduktSide/Produkter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclNpZGVyXFByb2R1a3RTaWRlXFByb2R1a3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/UserSider/ProduktSide/VidersendeProdukt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclNpZGVyXFByb2R1a3RTaWRlXFZpZGVyc2VuZGVQcm9kdWt0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gelio/source/repos/ClothingShop-TrainingTime/ClothingShop-TrainingTime/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0c9iox2vqk

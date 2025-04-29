@@ -1,0 +1,11 @@
+﻿@page
+@model ClothingShop_TrainingTime.Pages.UserSider.ProduktSide.AdresseGodekendelseModel
+@{
+}
+@if (TempData["PopupMessage"] != null)
+{
+    <script>
+        alert('@TempData["PopupMessage"]');
+        window.location.href = "/UserSider/ProduktSide/ProduktSide";
+    </script>
+}

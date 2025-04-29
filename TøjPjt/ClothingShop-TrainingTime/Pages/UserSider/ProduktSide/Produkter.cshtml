@@ -1,0 +1,23 @@
+﻿@page
+@model ClothingShop_TrainingTime.Pages.UserSider.ProduktSide.ProdukterModel
+@{
+}
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        @foreach (var produkt in Model.Produkter)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@produkt.BilledeUrl" class="card-img-top" alt="@produkt.Navn">
+                    <div class="card-body">
+                        <h5 class="card-title">@produkt.Navn</h5>
+                        <p class="card-text">Price: @produkt.Pris</p>
+                        <p class="card-text">Size: @produkt.Størrelse</p>
+                        <p class="card-text">Description: @produkt.Beskrivelse</p>
+                        <a  class="btn btn-primary">Check offer</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
