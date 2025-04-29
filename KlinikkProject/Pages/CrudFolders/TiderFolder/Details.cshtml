@@ -1,0 +1,37 @@
+﻿@page
+@model KlinikkProject.Pages.TiderFolder.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Tider</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tider.Dato)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tider.Dato)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tider.Tidspunkt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tider.Tidspunkt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tider.Lægerne)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tider.Lægerne.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Tider.Id">Edit</a> |
+    <a asp-page="../TheAdministrationSite">Back to List</a>
+</div>

@@ -1,0 +1,45 @@
+﻿@page
+@model KlinikkProject.Pages.TiderFolder.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Tider</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Tider.Id" />
+            <div class="form-group">
+                <label asp-for="Tider.Dato" class="control-label"></label>
+                <input asp-for="Tider.Dato" class="form-control" />
+                <span asp-validation-for="Tider.Dato" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tider.Tidspunkt" class="control-label"></label>
+                <input asp-for="Tider.Tidspunkt" class="form-control" />
+                <span asp-validation-for="Tider.Tidspunkt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tider.LægerneId" class="control-label"></label>
+                <select asp-for="Tider.LægerneId" class="form-control" asp-items="ViewBag.LægerneId"></select>
+                <span asp-validation-for="Tider.LægerneId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="../TheAdministrationSite">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

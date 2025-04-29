@@ -1,0 +1,71 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color:lightblue;
+}
+nav{
+    background-color:darkcyan;
+}
+
+
+
+.confirmation-page {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: "Georgia", serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+    .confirmation-page h2 {
+        color: #000000;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .confirmation-page p {
+        font-size: 20px;
+        color: #258cfb;
+        font-style: italic;
+        line-height: 1.6;
+        background: linear-gradient(45deg, #258cfb, #258cfb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

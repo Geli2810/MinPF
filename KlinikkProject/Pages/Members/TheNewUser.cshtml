@@ -1,0 +1,18 @@
+﻿@page
+@model KlinikkProject.Pages.Members.TheNewUserModel
+@{
+}
+<form method="post">
+    <input type="text" placeholder="Id" name="Id" required>
+    <input type="text" placeholder="Name" name="MemberName" required>
+    <input type="text" placeholder="LastName" name="MemberLastName"required>
+    <input type="text" placeholder="Email" name="MemberEmail" required>
+    <input type="text" placeholder="Password" name="MemberPassword" required>
+    <input type="text" placeholder="Adress" name="MemberAddress" required>
+    <input type="text" placeholder="City" name="MemberCity" required>
+    <input type="text" placeholder="Zip Code" name="MemberZipCode" required>
+    <input type="text" placeholder="Phone" name="MemberPhone" required>
+    <input type="text" placeholder="Situation" name="MemberSituation" required>
+    <input type="text" placeholder="Doctor-Id" name="LægerneId" required>
+    <button class="btn" asp-page-handler="TheNewUser" type="submit">Login</button>
+</form>

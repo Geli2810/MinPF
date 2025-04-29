@@ -1,0 +1,24 @@
+﻿@page
+@model KlinikkProject.Pages.Doctor.DoctorsModel
+@{
+}
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+@foreach(var item in Model.DoctorList)
+{
+    <form method="post">
+            <div class="col">
+                <div class="card btn-outline-info" style="width: 18rem;">
+                <div class="container">
+                    <h4><b>Navn: @item.Navn</b></h4>
+                    <p>Email: @item.Email</p>
+                    <p>Telefonnummer: @item.Telefonnr</p>
+                </div>
+                <input type="hidden" name="Id" value="@item.Id" />
+                <button class="btn-primary" style="border-radius: 10px" asp-page-handler="BestilTid">Bestil Tid</button>
+            </div>
+        </div>
+    </form>
+
+}
+</div>

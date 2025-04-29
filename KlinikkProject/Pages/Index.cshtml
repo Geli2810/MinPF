@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <input typeof="email" type="text" placeholder="Email" name="Email" required>
+    <input typeof="password" type="text" placeholder="Password" name="password" required>
+    <button class="btn" asp-page-handler="LogIndMethod" type="submit">Login</button>
+
+</form>
+
+<form method="post">
+    <button class="btn" asp-page-handler="Getit" type="submit">Opret konto</button>
+</form>
+
+<form method="post">
+    <button class="btn" asp-page-handler="ToAdminSite" type="submit">Im a Admin</button>
+</form>
+
+
+

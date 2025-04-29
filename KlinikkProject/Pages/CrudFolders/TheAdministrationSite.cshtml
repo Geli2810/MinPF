@@ -1,0 +1,93 @@
+﻿@page
+@model KlinikkProject.Pages.CrudFolders.TheAdministrationSiteModel
+@{
+}
+<div style="display: flex; gap: 100px;">
+    <div>
+        <h4><strong>Lægerne</strong></h4>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Lægerne[0].Navn)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Lægerne[0].Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Lægerne[0].Telefonnr)
+                    </th>
+                    <th>
+
+                            <a asp-page="/CrudFolders/AppoinmentFolder/Create">Create New doctor</a>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Lægerne)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Navn)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefonnr)
+                        </td>
+
+                        <td>
+                            <a asp-page="/CrudFolders/AppoinmentFolder/Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-page="/CrudFolders/AppoinmentFolder/Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-page="/CrudFolders/AppoinmentFolder/Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h4><strong>Tider</strong></h4>
+  
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Tider[0].Dato)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Tider[0].Tidspunkt)
+                    </th>
+
+                    <th>
+                        <a asp-page="/CrudFolders/TiderFolder/Create">Create New time </a>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Tider)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Dato)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tidspunkt)
+                        </td>
+ 
+                        <td>
+                            <a asp-page="/CrudFolders/TiderFolder/Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-page="/CrudFolders/TiderFolder/Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-page="/CrudFolders/TiderFolder/Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

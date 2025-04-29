@@ -1,0 +1,10 @@
+﻿@page
+@model KlinikkProject.Pages.CrudFolders.AdministrationLogInModel
+@{
+}
+<form method="post">
+    <input typeof="email" type="text" placeholder="Email" name="Email" required>
+    <input typeof="password" type="text" placeholder="Password" name="password" required>
+    <button class="btn" asp-page-handler="LogIndMethod" type="submit">Login</button>
+
+</form>

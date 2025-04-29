@@ -1,0 +1,37 @@
+﻿@page
+@model KlinikkProject.Pages.Doctor.BekræftelseAfMailModel
+@{
+}
+
+
+
+@foreach(var item in BekræftelseAfMailModel.GetTiders)
+{
+
+
+    <tr >
+        <td >
+            <div style="display: flex; justify-content: center; align-items: center; height: 75vh">
+
+
+            <form method="post">
+
+                    <p><strong>Email:</strong></p>
+                <input type="email"
+                       style="border-radius: 10px; width: 300px; height: 40px; font-size: 18px; padding: 10px; align-content:center"
+                       name="toEmail" placeholder="sophie@example.com" required />
+                <button 
+                    type="submit" 
+                    class="btn-outline-primary"
+                        style="border-radius: 10px; width: 100px; height: 45px; font-size: 18px; align-content:center"
+                    asp-page-handler="SendEmail">Bekræft
+                </button>
+
+            </form>
+            </div>
+        </td>
+        <td>
+    </tr>
+
+}
+

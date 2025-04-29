@@ -1,0 +1,55 @@
+﻿@page
+@model KlinikkProject.Pages.AppoinmentFolder.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Lægerne</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Lægerne.Navn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Lægerne.Navn)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Lægerne.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Lægerne.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Lægerne.Telefonnr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Lægerne.Telefonnr)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Lægerne.Adresse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Lægerne.Adresse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Lægerne.PostNr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Lægerne.PostNr)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Lægerne.Afdeling)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Lægerne.Afdeling)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Lægerne.Id">Edit</a> |
+    <a asp-page="../TheAdministrationSite">Back to List</a>
+</div>

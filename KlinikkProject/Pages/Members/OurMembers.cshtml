@@ -1,0 +1,23 @@
+﻿@page
+@model KlinikkProject.Pages.Members.OurMembersModel
+@{
+}
+<div class="row row-cols-1 row-cols-md-3 g-4">
+@foreach(var member in Model.ListOfMembers)
+{
+    <div class="col">
+        <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">First Name: @member.MemberName</h5>
+                    <p class="card-text">Last Name: @member.MemberLastName</p>
+                    <p accesskey="email">Email: @member.MemberEmail</p>
+                    <p class="card-text"> Phone Number: @member.MemberPhone</p>
+                    <p class="card-text"> Address: @member.MemberAddress</p>
+                    <p class="card-text"> City: @member.MemberCity</p>
+                    <p class="card-text"> Zip Code: @member.MemberZipCode</p>
+                    <p class="card-text"> Situation: @member.MemberSituation</p>
+                </div>
+            </div>
+    </div>
+}
+</div>

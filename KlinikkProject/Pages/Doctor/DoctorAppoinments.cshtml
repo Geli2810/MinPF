@@ -1,0 +1,25 @@
+﻿@page
+@model KlinikkProject.Pages.Doctor.DoctorAppoinmentsModel
+@{
+}
+<form method="post">
+    <table class="table">
+        @foreach(var tid in DoctorAppoinmentsModel.Tider)
+        {
+                <tr class="btn-outline-primary">
+                    <td>
+                               Dato: @Html.DisplayFor(modelItem => tid.Dato)
+                    </td>
+                    <td>
+                               Tidspunkt: @Html.DisplayFor(modelItem => tid.Tidspunkt)
+                    </td>
+                    <td>
+                            <input type="hidden" name="Id" value="@tid.Id" />
+                             <button class="btn-outline-primary" style="border-radius: 15px" asp-page-handler="Bekræftelse">Tilføj</button>
+                     </td>
+                </tr>
+
+
+        }
+    </table>
+</form>
