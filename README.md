@@ -18,7 +18,7 @@ Projektet er bygget op omkring en fiktiv klinik og demonstrerer grundlæggende f
 Formålet med projektet er at træne mine færdigheder i frontend-udvikling og give et realistisk bud på en klinik-hjemmeside.  
 Projektet viser min interesse for webudvikling og mit ønske om at arbejde med brugergrænseflader og systemer i praksis.
 
-#2 Tøjbutik Hjemmeside
+### 2.Tøjbutik Hjemmeside
 Dette projekt er en webshop, som jeg har udviklet som øvelse under datamatikeruddannelsen på Zealand.  
 Formålet er at bygge en medlemsbaseret online butik, hvor brugere kan oprette sig, logge ind og købe tøj.
 
