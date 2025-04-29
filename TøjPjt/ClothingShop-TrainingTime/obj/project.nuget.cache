@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "38HtWVgsBbs=",
+  "dgSpecHash": "MExrg9lqZXY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gelio\\source\\repos\\ClothingShop-TrainingTime\\ClothingShop-TrainingTime\\ClothingShop-TrainingTime.csproj",
+  "projectFilePath": "C:\\Users\\gelio\\source\\repos\\NovoNordisk\\MinPF\\TøjPjt\\ClothingShop-TrainingTime\\ClothingShop-TrainingTime.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gelio\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\gelio\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
